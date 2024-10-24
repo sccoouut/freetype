@@ -1,0 +1,29 @@
+{
+	"name": "FreeType",
+	"version": "2.13.3",
+	"description": "FreeType is a freely available software library to render fonts.",
+	"keywords": ["graphics", "fonts", "rendering", "text"],
+	"homepage": "https://freetype.org/",
+	"repository": {
+	  "type": "git",
+	  "url": "https://gitlab.freedesktop.org/freetype/freetype.git"
+	},
+	"authors": [
+	  {
+		"name": "The FreeType Project",
+		"maintainer": false,
+		"url": "https://freetype.org/"
+	  }
+	],
+	"license": "FTL or GPL-2.0",
+	"frameworks": ["espidf", "arduino"],
+	"platforms": ["espressif32"],
+	"build": {
+	  "libArchive": false,
+	  "flags": [
+		"-Iinclude",
+		"-DFT2_BUILD_LIBRARY"
+	  ],
+	  "includeDir": "include"
+	}
+  }
